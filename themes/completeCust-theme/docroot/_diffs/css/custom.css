@@ -7,19 +7,18 @@ $commonBorder: 1px solid #C9C9C6;
 /* -------- Global -------- */
 
 html {
-	font-family: "Times New Roman",Georgia,Arial,Verdana,Tahoma,sans-serif;
+	font-family: "Times New Roman", Georgia, Arial, Verdana, Tahoma, sans-serif;
 }
 
 body {
 	background: #AAA url(../images/custom/bg_white.gif) repeat-y scroll 50% top;
 	display: block;
-	font-family: Georgia,"Times New Roman",Arial,Verdana,Tahoma,sans-serif;
-	font-size: 0.9em;
+	font: 0.9em Georgia,"Times New Roman", Arial, Verdana, Tahoma, sans-serif;
 	margin: 0 auto;
 	padding: 0;
 
 	h1 {
-		font-family: "Times New Roman",Georgia,Arial,Verdana,Tahoma,sans-serif;
+		font-family: "Times New Roman", Georgia, Arial, Verdana, Tahoma, sans-serif;
 		margin: 0;
 	}
 }
@@ -45,8 +44,6 @@ div #heading {
 	border-top: 1px solid #000;
 	margin-bottom: 3px;
 	padding-top: 3px;
-
-
 }
 
 #sign-in {
@@ -54,7 +51,7 @@ div #heading {
 }
 
 .site-title {
-	background: transparent url(../images/custom/header-image.jpg) repeat scroll right top; 
+	background: transparent url(../images/custom/header-image.jpg) repeat scroll right top;
 	margin: 0;
 
 	&:after {
@@ -84,41 +81,40 @@ header .logo {
 	background-color: #343434;
 	color: #FFF;
 	display: block;
-	font-family: "Myriad Pro","Times New Roman",Georgia,Arial,Verdana,sans-serif;
+	font-family: "Myriad Pro", "Times New Roman", Georgia, Arial, Verdana, sans-serif;
 	margin-bottom: 14px;
 	text-align: left;
-}
 
-#navigation:after {
-	clear: both;
-	content: ".";
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
+	&:after {
+		clear: both;
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
 
-#navigation ul {
-	color: #FFF;
-	display: inline;
+	ul {
+		color: #FFF;
+		display: inline;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		list-style: none;
 
-	margin: 0;
-	padding: 0;
-	text-align: right;
-	list-style: none outside none;
+			li a {
+				color: #FFF;
+				display: block;
+				float: left;
+				font-size: 1.2em;
+				list-style: none;
+				margin: 0;
+				padding: 0.35em 1.3em 0.5em;
+			}
+	}
 
-		li a {
-			color: #FFF;
-			display: block;
-			float: left;
-			font-size: 1.2em;
-			list-style: none outside none;
-			margin: 0;
-			padding: 0.35em 1.3em 0.5em;
-		}
-}
-
-#navigation h1 span {
-	display: none;
+	h1 span {
+		display: none;
+	}
 }
 
 #breadcrumbs {
@@ -128,15 +124,15 @@ header .logo {
 /*----------Layout-------------------*/
 
 .columns-3 {
-		float: left;
-		margin-bottom: 30px;
-		overflow: hidden;
-		text-align: left;
+	float: left;
+	margin-bottom: 30px;
+	overflow: hidden;
+	text-align: left;
 
 	#column-1 {
 		border-right: $commonBorder;
 		overflow: hidden;
-		padding: 0px 10px 10px 0px;
+		padding: 0 10px 10px 0;
 		width: 161px;
 
 		.portlet-boundary:first-child .portlet-topper {
@@ -211,7 +207,7 @@ header .logo {
 
 	li {
 		display: block;
-		
+
 		ul {
 			border-left: 4px solid #C9C9C6;
 		}
@@ -221,5 +217,5 @@ header .logo {
 /*--------- Extras ----------*/
 
 #skip-to-content {
-	display:none;
+	display: none;
 }
